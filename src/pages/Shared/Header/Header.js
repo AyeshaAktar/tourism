@@ -6,7 +6,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
       <div className="container-fluid">
         <Link className="navbar-brand text-white" to="/">
-          Optic Eye-Care
+          Camping Village
         </Link>
         <button
           className="navbar-toggler"
@@ -27,8 +27,8 @@ const Header = () => {
             <Link className="nav-link active text-white" to="/home">
               Home
             </Link>
-            <Link className="nav-link text-white" to="/home#service">
-              Service
+            <Link className="nav-link text-white" to="/home#camping">
+              Camping
             </Link>
             <Link className="nav-link text-white" to="/about">
               About us

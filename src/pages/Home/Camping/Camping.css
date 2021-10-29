@@ -1,0 +1,10 @@
+.camping-img {
+  height: 300px;
+}
+.camping-card {
+  transition: 700ms ease;
+  cursor: pointer;
+}
+.camping-card:hover {
+  transform: scale(1.02);
+}

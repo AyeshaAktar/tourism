@@ -5,6 +5,7 @@ import Header from "./pages/Shared/Header/Header";
 import Home from "./pages/Home/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Footer from "./pages/Shared/Footer/Footer";
+import BookNow from "./pages/BookNow/BookNow";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/bookNow/:id">
+            <BookNow></BookNow>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
