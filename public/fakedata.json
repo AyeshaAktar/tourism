@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "img": "https://www.belltent.com/images/5m-sandstone-canvas-bell-tent-single-door-p432-10236_image.jpg",
+    "name": "Classic Tent",
+    "bookingdetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam harum sit magni libero dolore in voluptas doloribus cumque odio, natus voluptatibus vero earum deleniti inventore porro! Illo, aut temporibus",
+    "cost": "15"
+  },
+  {
+    "id": 2,
+    "img": "https://www.shaadidukaan.com/userfiles/innerVendor_images/default/4-2.jpg",
+    "name": "Luxery Tent",
+    "bookingdetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam harum sit magni libero dolore in voluptas doloribus cumque odio, natus voluptatibus vero earum deleniti inventore porro! Illo, aut temporibus",
+    "cost": "30"
+  },
+  {
+    "id": 3,
+    "img": "https://cdn2.olivertraveltrailers.com/wp-content/uploads/2019/12/14105354/small-travel-trailers-for-couple-2-1.jpg",
+    "name": "Small Trailer",
+    "bookingdetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam harum sit magni libero dolore in voluptas doloribus cumque odio, natus voluptatibus vero earum deleniti inventore porro! Illo, aut temporibus",
+    "cost": "40"
+  },
+  {
+    "id": 4,
+    "img": "https://pjtrailers.com/wp-content/uploads/2020/05/tiny-house-on-pj-trailer.jpg",
+    "name": "Cabin Trailer",
+    "bookingdetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam harum sit magni libero dolore in voluptas doloribus cumque odio, natus voluptatibus vero earum deleniti inventore porro! Illo, aut temporibus",
+    "cost": "55"
+  },
+  {
+    "id": 5,
+    "img": "http://www.stonesrv.com/wp-content/uploads/2019/01/ResizedImage477319-Young-Family.jpg",
+    "name": "Famity Trailer",
+    "bookingdetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam harum sit magni libero dolore in voluptas doloribus cumque odio, natus voluptatibus vero earum deleniti inventore porro! Illo, aut temporibus",
+    "cost": "60"
+  },
+  {
+    "id": 6,
+    "img": "https://topnotchoutdoor.com/wp-content/uploads/2020/07/How-Big-a-Tent-02.jpg",
+    "name": "Family Tent",
+    "bookingdetails": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quibusdam harum sit magni libero dolore in voluptas doloribus cumque odio, natus voluptatibus vero earum deleniti inventore porro! Illo, aut temporibus",
+    "cost": "35"
+  }
+]
