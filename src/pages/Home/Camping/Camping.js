@@ -10,9 +10,9 @@ const Camping = (props) => {
         <img src={img} className="card-img-top camping-img" alt="..." />
         <div className="card-body text-start">
           <h5 className="card-title">{name}</h5>
-          <p className="card-text">{bookingdetails}...</p>
+          <p className="card-text">{bookingdetails.slice(0, 100)}...</p>
           <Link to={`/bookNow/${_id}`}>
-            <button type="button" className="btn btn-warning">
+            <button type="button" className="btn book-now">
               Book Now
             </button>
           </Link>

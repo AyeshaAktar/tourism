@@ -9,9 +9,9 @@ const Footer = () => {
     <div className="footer mt-5 py-5">
       <div className="d-flex justify-content-center ">
         <p className="mx-2">About Us</p>
-        <p className="mx-2">Admission</p>
-        <p className="mx-2">Events</p>
-        <p className="mx-2">Contacts</p>
+        <p className="mx-2">Camping</p>
+        <p className="mx-2">Activities</p>
+        <p className="mx-2">Latest News</p>
       </div>
       <div className="social-icon d-flex gap-2 justify-content-center mb-3">
         <button className="btn btn-light rounded-circle">

@@ -8,3 +8,8 @@
 .camping-card:hover {
   transform: scale(1.02);
 }
+
+.book-now {
+  background-color: crimson;
+  color: white;
+}

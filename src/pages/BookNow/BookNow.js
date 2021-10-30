@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import "./BookNow.css";
 import { useParams } from "react-router";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Context/AuthProvider";
@@ -9,15 +10,12 @@ const BookNow = () => {
   const [details, setDetails] = useState([]);
   const [loginUser, setLoginUser] = useContext(AuthContext);
 
+  console.log(details);
   useEffect(() => {
-    fetch("http://localhost:5000/campings")
+    fetch(`http://localhost:5000/campings/${id}`)
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
-
-  const singleData = details.find(
-    (camping) => parseInt(camping._id) === parseInt(id)
-  );
 
   const {
     register,
@@ -25,7 +23,7 @@ const BookNow = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    const bookingData = { ...data, ...singleData };
+    const bookingData = { ...data, ...details };
     console.log(data);
     axios.post("http://localhost:5000/bookings", bookingData).then((res) => {
       if (res.data.insertedId) {
@@ -38,15 +36,15 @@ const BookNow = () => {
     <div className="container">
       <h1 className="my-5">Booking Details</h1>
       <div className="row">
-        <div className="col-md-7">
-          <div className="row">
+        <div className="col-md-7 border">
+          <div className="row py-3">
             <div className="col-md-4">
-              <img className="img-fluid" src={singleData?.img} alt="" />
+              <img className="img-fluid image" src={details?.img} alt="" />
             </div>
             <div className="col-md-8 text-start">
-              <h2>{singleData?.name}</h2>
-              <p>{singleData?.bookingdetails}</p>
-              <h6>Cost: {singleData?.cost}$ For 24hour</h6>
+              <h2 className="text-warning">{details?.name}</h2>
+              <p>{details?.bookingdetails}</p>
+              <h6>Cost: {details?.cost}$ For 24hour</h6>
             </div>
           </div>
         </div>
@@ -62,14 +60,18 @@ const BookNow = () => {
             <div className="mb-2">
               <input
                 defaultValue={loginUser.displayName}
-                {...register("name", { required: true })}
+                {...register("userName", { required: true })}
               />
             </div>
             <div className="mb-2">
-              <input {...register("address", { required: true })} />
+              <input
+                placeholder="Address"
+                {...register("address", { required: true })}
+              />
             </div>
             <div className="mb-2">
               <input
+                placeholder="Phone Number"
                 type="number"
                 {...register("phoneNumber", { required: true })}
               />

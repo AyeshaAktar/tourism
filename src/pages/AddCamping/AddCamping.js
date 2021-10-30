@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import "./AddCamping.css";
 import { useForm } from "react-hook-form";
 
 const AddCamping = () => {
@@ -14,8 +15,8 @@ const AddCamping = () => {
     });
   };
   return (
-    <div>
-      <h2>Please Add a camping</h2>
+    <div className="my-5 add-camping">
+      <h2 className="mb-4">Add A New Camping</h2>
       <div className="">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-2">

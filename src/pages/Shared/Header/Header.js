@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import "./Header.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider";
 import { getAuth, signOut } from "firebase/auth";
@@ -17,9 +18,9 @@ const Header = () => {
       });
   };
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top header">
       <div className="container-fluid">
-        <Link className="navbar-brand text-white" to="/">
+        <Link className="navbar-brand text-white fw-bold" to="/">
           Camping Village
         </Link>
         <button
@@ -49,6 +50,9 @@ const Header = () => {
             </Link>
             <Link className="nav-link text-white" to="/manageBooking">
               Manage Booking
+            </Link>
+            <Link className="nav-link text-white" to="/addCamping">
+              AddNewBooking
             </Link>
             {loginUser?.email ? (
               <Link
