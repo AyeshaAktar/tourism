@@ -3,7 +3,9 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { AuthContext } from "../../../Context/AuthProvider";
 import { useHistory, useLocation } from "react-router";
 import initializeAuthentaction from "../Firebase/firebase.init";
+
 initializeAuthentaction();
+
 const GoogleLogin = () => {
   const [loginUser, setLoginUser] = useContext(AuthContext);
   const history = useHistory();
@@ -34,8 +36,10 @@ const GoogleLogin = () => {
   };
 
   return (
-    <div onClick={handleGoogleLogin} className="btn btn-primary">
-      <button>Sign In With Google</button>
+    <div>
+      <button onClick={handleGoogleLogin} className="btn btn-primary">
+        Login In With Google
+      </button>
     </div>
   );
 };

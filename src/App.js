@@ -7,6 +7,11 @@ import NotFound from "./pages/NotFound/NotFound";
 import Footer from "./pages/Shared/Footer/Footer";
 import BookNow from "./pages/BookNow/BookNow";
 import AuthProvider from "./Context/AuthProvider";
+import Login from "./pages/Login/Login/Login";
+import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
+import AddCamping from "./pages/AddCamping/AddCamping";
+import ManageBooking from "./pages/ManageBooking/ManageBooking";
+import MyBooking from "./pages/MyBooking/MyBooking";
 
 function App() {
   return (
@@ -21,8 +26,20 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/bookNow/:id">
+            <Route path="/myBooking">
+              <MyBooking></MyBooking>
+            </Route>
+            <Route path="/manageBooking">
+              <ManageBooking></ManageBooking>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <PrivateRoute path="/bookNow/:id">
               <BookNow></BookNow>
+            </PrivateRoute>
+            <Route path="/addCamping">
+              <AddCamping></AddCamping>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

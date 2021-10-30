@@ -5,7 +5,7 @@ const Campings = () => {
   const [campings, setCampings] = useState([]);
 
   useEffect(() => {
-    fetch("/fakedata.json")
+    fetch("http://localhost:5000/campings")
       .then((res) => res.json())
       .then((data) => setCampings(data));
   }, []);
@@ -15,7 +15,7 @@ const Campings = () => {
       <h2>Tent Camping</h2>
       <div className="row g-4">
         {campings.map((camping) => (
-          <Camping camping={camping}></Camping>
+          <Camping key={camping._id} camping={camping}></Camping>
         ))}
       </div>
     </div>

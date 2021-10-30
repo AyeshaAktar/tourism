@@ -44,11 +44,11 @@ const Header = () => {
             <Link className="nav-link text-white" to="/home#camping">
               Camping
             </Link>
-            <Link className="nav-link text-white" to="/about">
-              About us
+            <Link className="nav-link text-white" to="/MyBooking">
+              My Booking
             </Link>
-            <Link className="nav-link text-white" to="/blog">
-              Blog
+            <Link className="nav-link text-white" to="/manageBooking">
+              Manage Booking
             </Link>
             {loginUser?.email ? (
               <Link
