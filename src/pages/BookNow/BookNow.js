@@ -23,7 +23,15 @@ const BookNow = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    const bookingData = { ...data, ...details };
+    const { name, img, cost, bookingdetails } = details;
+    const bookingData = {
+      ...data,
+      name,
+      img,
+      cost,
+      bookingdetails,
+      bookingStatus: "pending",
+    };
     console.log(data);
     axios
       .post("https://fast-hamlet-25148.herokuapp.com/bookings", bookingData)

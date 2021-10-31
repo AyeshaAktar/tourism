@@ -8,7 +8,7 @@ const ManageBooking = () => {
     fetch("https://fast-hamlet-25148.herokuapp.com/bookings")
       .then((res) => res.json())
       .then((data) => setBookingDetails(data));
-  }, []);
+  }, [bookingDetails]);
   console.log(bookingDetails);
 
   const handleDelete = (id) => {
@@ -40,7 +40,7 @@ const ManageBooking = () => {
               <tr>
                 <td>{booking?.userName}</td>
                 <td>{booking?.phoneNumber}</td>
-                <td>Otto</td>
+                <td>{booking?.bookingStatus}</td>
                 <td>
                   <button
                     key={booking._id}

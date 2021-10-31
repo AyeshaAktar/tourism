@@ -18,7 +18,7 @@ const MyBooking = () => {
   return (
     <div className="mybooking">
       <div className="container my-5">
-        <h2 className="mb-5">Order: {orderList.length}</h2>
+        <h2 className="mb-5">Booking: {orderList.length}</h2>
         {orderList.map((booking) => (
           <div>
             <div className="row pb-3 mb-3 border-bottom">
@@ -35,6 +35,7 @@ const MyBooking = () => {
                 <p>
                   <strong>Booking Id:</strong> {booking?._id}
                 </p>
+                <button className="btn btn-danger">cancle</button>
               </div>
             </div>
           </div>
