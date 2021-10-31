@@ -10,7 +10,7 @@ const LatestNews = () => {
       <div class="row row-cols-1 row-cols-md-2 g-5 my-3">
         <div class="col">
           <div class="card">
-            <img src={summre} class="card-img-top image" alt="..." />
+            <img src={summre} class="card-img-top letest-news" alt="..." />
             <div class="card-body">
               <h3 class="card-title text-warning">Summer Camping</h3>
               <h6>
@@ -21,7 +21,7 @@ const LatestNews = () => {
         </div>
         <div class="col">
           <div class="card">
-            <img src={winter} class="card-img-top image" alt="..." />
+            <img src={winter} class="card-img-top letest-news" alt="..." />
             <div class="card-body">
               <h3 class="card-title text-warning">Winter Camping</h3>
               <h6>

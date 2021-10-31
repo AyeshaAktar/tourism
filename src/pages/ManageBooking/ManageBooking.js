@@ -5,20 +5,20 @@ const ManageBooking = () => {
   const [bookingDetails, setBookingDetails] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/bookings")
+    fetch("https://fast-hamlet-25148.herokuapp.com/bookings")
       .then((res) => res.json())
       .then((data) => setBookingDetails(data));
   }, []);
   console.log(bookingDetails);
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/bookings/${id}`;
+    const url = `https://fast-hamlet-25148.herokuapp.com/DeleteBookings/${id}`;
     fetch(url, {
       method: "DELETE",
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        console.log("delete successfully", data);
       });
   };
 

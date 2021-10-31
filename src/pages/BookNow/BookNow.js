@@ -12,7 +12,7 @@ const BookNow = () => {
 
   console.log(details);
   useEffect(() => {
-    fetch(`http://localhost:5000/campings/${id}`)
+    fetch(`https://fast-hamlet-25148.herokuapp.com/campings/${id}`)
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
@@ -25,11 +25,13 @@ const BookNow = () => {
   const onSubmit = (data) => {
     const bookingData = { ...data, ...details };
     console.log(data);
-    axios.post("http://localhost:5000/bookings", bookingData).then((res) => {
-      if (res.data.insertedId) {
-        alert("booking successfully");
-      }
-    });
+    axios
+      .post("https://fast-hamlet-25148.herokuapp.com/bookings", bookingData)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("booking successfully");
+        }
+      });
   };
 
   return (

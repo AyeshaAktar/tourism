@@ -5,7 +5,7 @@ const Campings = () => {
   const [campings, setCampings] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/campings")
+    fetch("https://fast-hamlet-25148.herokuapp.com/campings")
       .then((res) => res.json())
       .then((data) => setCampings(data));
   }, []);
