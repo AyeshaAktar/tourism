@@ -40,7 +40,7 @@ const ManageBooking = () => {
               <tr>
                 <td>{booking?.userName}</td>
                 <td>{booking?.phoneNumber}</td>
-                <td>{booking?.bookingStatus}</td>
+                <td>{booking.bookingStatus}</td>
                 <td>
                   <button
                     key={booking._id}

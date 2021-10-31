@@ -29,18 +29,18 @@ function App() {
             <PrivateRoute path="/myBooking">
               <MyBooking></MyBooking>
             </PrivateRoute>
-            <Route path="/manageBooking">
+            <PrivateRoute path="/manageBooking">
               <ManageBooking></ManageBooking>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
             <PrivateRoute path="/bookNow/:id">
               <BookNow></BookNow>
             </PrivateRoute>
-            <Route path="/addCamping">
+            <PrivateRoute path="/addCamping">
               <AddCamping></AddCamping>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

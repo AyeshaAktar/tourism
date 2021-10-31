@@ -38,19 +38,19 @@ const Banner = () => {
           <div className="carousel-item active">
             <img src={banner1} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h2 className="text-warning">Banner 1</h2>
+              <h2 className="text-white">Welcome To Camping Village</h2>
             </div>
           </div>
           <div className="carousel-item">
             <img src={banner2} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h2 className="text-warning">Banner 2</h2>
+              <h2 className="text-white">Welcome To Camping Village</h2>
             </div>
           </div>
           <div className="carousel-item">
             <img src={banner3} class="d-block w-100 banner-img" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h2 className="text-warning">Banner 3</h2>
+              <h2 className="text-white">Welcome To Camping Village</h2>
             </div>
           </div>
         </div>

@@ -89,7 +89,7 @@ const BookNow = () => {
 
             {errors.exampleRequired && <span>This field is required</span>}
 
-            <input type="submit" value="Check Out" />
+            <input type="submit" value="Booking" />
           </form>
         </div>
       </div>

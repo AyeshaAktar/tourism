@@ -1,9 +1,14 @@
-import React, { useContext } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import React, { useContext, useEffect } from "react";
+import {
+  getAuth,
+  signInWithPopup,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+} from "firebase/auth";
+
 import { AuthContext } from "../../../Context/AuthProvider";
 import { useHistory, useLocation } from "react-router";
 import initializeAuthentaction from "../Firebase/firebase.init";
-import { useState } from "react/cjs/react.development";
 
 initializeAuthentaction();
 
@@ -16,6 +21,10 @@ const GoogleLogin = () => {
   let { from } = location.state || { from: { pathname: "/" } };
 
   const googleProvider = new GoogleAuthProvider();
+
+  googleProvider.setCustomParameters({
+    prompt: "select_account",
+  });
 
   const handleGoogleLogin = () => {
     // setIsLoading(true);
@@ -38,7 +47,6 @@ const GoogleLogin = () => {
         const credential = GoogleAuthProvider.credentialFromError(error);
         // ...
       });
-    // .finally(() => setIsLoading(false));
   };
 
   return (

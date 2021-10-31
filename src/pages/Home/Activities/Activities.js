@@ -9,7 +9,7 @@ import horseRiding from "../../../images/activities/horse.jpg";
 const Activities = () => {
   return (
     <div className="container">
-      <h2>Adventer Activities</h2>
+      <h2 className="text-warning">Adventer Activities</h2>
       <div className="d-flex justify-content-center">
         <div className="my-5 w-75 shadow">
           <div className="row pb-3 mb-3 border-bottom">
@@ -23,8 +23,9 @@ const Activities = () => {
             <div className="col-md-8 text-start">
               <h4>Mountains Hiking</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-                vero dolorum dolores quia ratione odit, obcaecati?
+                Hiking is a long, vigorous walk, usually on trails or footpaths
+                in the countryside. Walking for pleasure developed in Europe
+                during the eighteenth century.
               </p>
             </div>
           </div>
@@ -35,8 +36,9 @@ const Activities = () => {
             <div className="col-md-8 text-start">
               <h4>Zipline</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-                vero dolorum dolores quia ratione odit, obcaecati?
+                A zip-line, zip line, zip-wire, or zip-power-line is a pulley
+                suspended on a cable, usually made of stainless steel, mounted
+                on a slope.
               </p>
             </div>
           </div>
@@ -47,8 +49,9 @@ const Activities = () => {
             <div className="col-md-8 text-start">
               <h4>Bike Riding</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-                vero dolorum dolores quia ratione odit, obcaecati?
+                Bikeride was an American indie rock band fronted by Tony
+                Carbone. Their record companies of the past have included is
+                Hidden Agenda, a part of Parasol Records, and Choclaty! Records.
               </p>
             </div>
           </div>
@@ -59,8 +62,9 @@ const Activities = () => {
             <div className="col-md-8 text-start">
               <h4>Bonfire</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-                vero dolorum dolores quia ratione odit, obcaecati?
+                A bonfire is a large and controlled outdoor fire, used either
+                for informal disposal of burnable waste material or as part of a
+                celebration.
               </p>
             </div>
           </div>
@@ -69,10 +73,11 @@ const Activities = () => {
               <img className="img-fluid activitie" src={horseRiding} alt="" />
             </div>
             <div className="col-md-8 text-start">
-              <h4>Mountains Hiking</h4>
+              <h4>Horse Riding</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam
-                vero dolorum dolores quia ratione odit, obcaecati?
+                Equestrianism commonly known as horse riding (British English)
+                or horseback riding, includes the disciplines of riding,
+                driving, and vaulting.
               </p>
             </div>
           </div>

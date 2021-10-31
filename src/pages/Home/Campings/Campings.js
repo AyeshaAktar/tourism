@@ -12,7 +12,7 @@ const Campings = () => {
 
   return (
     <div className="container my-5" id="camping">
-      <h2>Tent Camping</h2>
+      <h2 className="text-warning">Tent Camping</h2>
       <div className="row g-4 mt-4">
         {campings.map((camping) => (
           <Camping key={camping._id} camping={camping}></Camping>
