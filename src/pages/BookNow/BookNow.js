@@ -39,7 +39,7 @@ const BookNow = () => {
       .then((res) => {
         if (res.data.insertedId) {
           alert(
-            `booking successfully. Please review this product ${history.push(
+            `booking successfully. Please review this ${history.push(
               "/review"
             )}`
           );
