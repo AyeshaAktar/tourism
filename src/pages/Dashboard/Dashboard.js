@@ -2,6 +2,7 @@ import React from "react";
 import AddCamping from "../AddCamping/AddCamping";
 import ManageBooking from "../ManageBooking/ManageBooking";
 import MyBooking from "../MyBooking/MyBooking";
+import ReviewPage from "../Review/ReviewPage";
 
 const Dashboard = () => {
   return (
@@ -52,38 +53,7 @@ const Dashboard = () => {
             Manage Booking
           </button>
         </li>
-
-        {/* <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="manageOrder-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#manageOrder"
-            type="button"
-            role="tab"
-            aria-controls="manageOrder"
-            aria-selected="false"
-          >
-            Manage Order
-          </button>
-        </li> */}
-
-        {/* <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="myOrder-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#myOrder"
-            type="button"
-            role="tab"
-            aria-controls="myOrder"
-            aria-selected="false"
-          >
-            My Order
-          </button>
-        </li> */}
-
-        {/* <li class="nav-item" role="presentation">
+        <li class="nav-item" role="presentation">
           <button
             class="nav-link"
             id="review-tab"
@@ -96,7 +66,7 @@ const Dashboard = () => {
           >
             Review
           </button>
-        </li> */}
+        </li>
       </ul>
       <div class="tab-content" id="myTabContent">
         <div
@@ -125,16 +95,7 @@ const Dashboard = () => {
         >
           <ManageBooking></ManageBooking>
         </div>
-
-        {/* <div
-          class={`tab-pane fade ${admin[0]?.email ?? "show active"}`}
-          id="myOrder"
-          role="tabpanel"
-          aria-labelledby="myOrder-tab"
-        >
-          <MyOrder></MyOrder>
-        </div> */}
-        {/* <div
+        <div
           class="tab-pane fade"
           id="review"
           role="tabpanel"
@@ -142,15 +103,6 @@ const Dashboard = () => {
         >
           <ReviewPage></ReviewPage>
         </div>
-
-        <div
-          class="tab-pane fade"
-          id="makeAdmin"
-          role="tabpanel"
-          aria-labelledby="makeAdmin-tab"
-        >
-          <MakeAdmin></MakeAdmin>
-        </div> */}
       </div>
     </div>
   );

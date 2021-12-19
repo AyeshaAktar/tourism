@@ -13,6 +13,7 @@ import AddCamping from "./pages/AddCamping/AddCamping";
 import ManageBooking from "./pages/ManageBooking/ManageBooking";
 import MyBooking from "./pages/MyBooking/MyBooking";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import ReviewPage from "./pages/Review/ReviewPage";
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/dashboard">
               <Dashboard></Dashboard>
+            </PrivateRoute>
+            <PrivateRoute path="/review">
+              <ReviewPage></ReviewPage>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>

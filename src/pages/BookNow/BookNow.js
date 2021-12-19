@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./BookNow.css";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Context/AuthProvider";
 import axios from "axios";
@@ -17,6 +17,7 @@ const BookNow = () => {
       .then((data) => setDetails(data));
   }, []);
 
+  const history = useHistory();
   const {
     register,
     handleSubmit,
@@ -37,11 +38,14 @@ const BookNow = () => {
       .post("https://fast-hamlet-25148.herokuapp.com/bookings", bookingData)
       .then((res) => {
         if (res.data.insertedId) {
-          alert("booking successfully");
+          alert(
+            `booking successfully. Please review this product ${history.push(
+              "/review"
+            )}`
+          );
         }
       });
   };
-
   return (
     <div className="container">
       <h1 className="my-5">Booking Details</h1>
