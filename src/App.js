@@ -12,6 +12,7 @@ import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
 import AddCamping from "./pages/AddCamping/AddCamping";
 import ManageBooking from "./pages/ManageBooking/ManageBooking";
 import MyBooking from "./pages/MyBooking/MyBooking";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/addCamping">
               <AddCamping></AddCamping>
+            </PrivateRoute>
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
             </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>

@@ -47,6 +47,11 @@ const Header = () => {
                 Camping
               </Link>
               {loginUser?.email && (
+                <Link className="nav-link text-white" to="/dashboard">
+                  DashBoard
+                </Link>
+              )}
+              {/* {loginUser?.email && (
                 <Link className="nav-link text-white" to="/MyBooking">
                   My Booking
                 </Link>
@@ -60,7 +65,7 @@ const Header = () => {
                 <Link className="nav-link text-white" to="/addCamping">
                   AddNewBooking
                 </Link>
-              )}
+              )} */}
               {loginUser?.email ? (
                 <Link
                   onClick={handleLogout}
